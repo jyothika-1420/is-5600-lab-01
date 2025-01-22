@@ -1,16 +1,87 @@
-
 * {
    box-sizing: border-box;
 }
+
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
    margin: 0;
    padding: 0;
 }
+
 body {
    font-family: 'Open Sans', sans-serif;
-   box-sizing: border-box;
    background-color: #F0F4F8;
    font-weight: 300;
+   line-height: 1.6;
 }
 
-/* add styles here */
+/* Navigation Styles */
+nav {
+   background-color: #333;
+   padding: 1rem;
+}
+
+nav ul {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-around;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-weight: 600;
+}
+
+/* Hero Section Styles */
+.hero {
+   background-image: url('path-to-your-hero-image.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 50vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   text-align: center;
+}
+
+.hero h1 {
+   font-size: 3rem;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Card Styles */
+.card-container {
+   display: flex;
+   justify-content: space-around;
+   padding: 2rem;
+}
+
+.card {
+   background-color: white;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+   padding: 1.5rem;
+   width: 30%;
+}
+
+.card h2 {
+   color: #333;
+   margin-bottom: 1rem;
+}
+
+.card p {
+   color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .card-container {
+      flex-direction: column;
+   }
+   
+   .card {
+      width: 100%;
+      margin-bottom: 1rem;
+   }
+}
